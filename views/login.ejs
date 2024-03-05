@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/Public/css/login.css" />
+
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login__content">
+        <div class="img">
+          <img src="/Public/images/logreg.png" alt="image" />
+        </div>
+
+        <form action="" class="login__form">
+          <div>
+            <h1 class="login__title">
+              Hello,<br />
+              Welcome back!
+            </h1>
+          </div>
+
+          <div>
+            <div class="login__inputs">
+              <div>
+                <label for="input-email" class="login__label"
+                  >Username or email</label
+                >
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  required
+                  class="login__input"
+                  id="input-email"
+                />
+              </div>
+
+              <div>
+                <label for="input-pass" class="login__label">Password</label>
+
+                <div class="login__box">
+                  <input
+                    type="password"
+                    placeholder="Enter your password"
+                    required
+                    class="login__input"
+                    id="input-pass"
+                  />
+                  <i class="ri-eye-off-line login__eye" id="input-icon"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="login__check">
+              <input
+                type="checkbox"
+                class="login__check-input"
+                id="input-check"
+              />
+              <label for="input-check" class="login__check-label"
+                >Remember me</label
+              >&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+              &nbsp;&nbsp; &nbsp;&nbsp;
+              <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="login__buttons">
+              <button class="login__button">Login</button>
+            </div>
+
+            <p>Don't have an account? <b>Click here</b></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/Public/JS/login.js"></script>
+  </body>
+</html>
