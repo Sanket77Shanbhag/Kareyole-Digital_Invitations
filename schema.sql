@@ -37,6 +37,16 @@ foreign key(user_id)references USERS(user_id),
 foreign key(template_id)references TEMPLATES(template_id),
 foreign key(customization_id)references CUSTOMIZATION(customization_id));
 
+ALTER TABLE invitations
+ADD COLUMN no_of_invitations INT;
+
+UPDATE invitations
+SET no_of_invitations = (
+    SELECT COUNT(*)
+    FROM invitations
+);
+
+
 
 CREATE TABLE IF NOT EXISTS RSVP_RESPONSES(
 rsvp_id varchar(10),
@@ -50,28 +60,7 @@ primary key(rsvp_id),
 foreign key(user_id)references USERS(user_id),
 foreign key(invitation_id)references INVITATIONS(invitation_id));
 
-CREATE TABLE IF NOT EXISTS Feedback(
-feedbackid varchar(10),
-user_id varchar(30),
-invitation_id varchar(10),
-rating varchar(2),
-comments char(20),
-timestamp timestamp,
-primary key (feedbackid),
-foreign key(user_id)references USERS(user_id),
-foreign key(invitation_id)references INVITATIONS(invitation_id));
-
-
-CREATE TABLE IF NOT EXISTS Payment(
-payid varchar(10),
-user_id varchar(30),
-invitation_id varchar(10),
-amount int,
-dop date,
-method varchar(10),
-transaction_id varchar(10),
-status char(10),
-primary key(payid),
-foreign key(user_id)references USERS(user_id),
-foreign key(invitation_id)references INVITATIONS(invitation_id));
-
+CREATE TABLE IF NOT EXISTS contact_us (
+    name VARCHAR(50) NOT NULL,
+    phone VARCHAR(10),
+    message VARCHAR(100));

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="register.css" />
+
+  <title>Register Page</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="login__content">
+      <div class="img">
+        <img src="background.png" alt="image" />
+      </div>
+
+      <form method="post" action="register1.mjs" class="login__form">
+
+        <div>
+          <h1 class="login__title">Create your account</h1>
+        </div>
+
+        <div>
+          <div class="login__inputs">
+            <div>
+              <label for="input-name" class="login__label">Your name</label>
+              <input type="text" placeholder="Enter your name here" required class="login__input" id="input-name" />
+            </div>
+            <div>
+              <label for="input-email" class="login__label">E-mail or phone number</label>
+              <input type="email" placeholder="Type your e-mail or phone number" required class="login__input"
+                id="input-email" />
+            </div>
+
+            <div>
+              <label for="input-pass" class="login__label">Password</label>
+
+              <div class="login__box">
+                <input type="password" placeholder="Type your password" required class="login__input" id="input-pass" />
+                <i class="ri-eye-off-line login__eye" id="input-icon"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="login__check">
+            <input type="checkbox" class="login__check-input" id="input-check" />
+            <label for="input-check" class="login__check-label">By creating an account means you agree to the
+              <b>terms and conditions</b> and our <b>Privacy Policy</b></label>
+          </div>
+        </div>
+
+        <div>
+          <div class="login__buttons">
+            <button class="login__button"><a href="../login/login.html">Register</a></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="register.js"></script>
+</body>
+
+</html>

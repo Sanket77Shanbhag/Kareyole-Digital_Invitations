@@ -1,0 +1,507 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 1512px;
+    height: 3425px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  .macbook-pro {
+    flex-shrink: 0;
+    position: relative;
+    width: 1512px;
+    height: 2383px;
+    background: #ffffff;
+    z-index: 2;
+    overflow: hidden;
+  }
+  nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li a {
+    display: inline-block;
+    color: #a60035;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* nav li a:hover {
+    background-color: #a60035;
+    color: white;
+  }
+  
+  nav li a.active {
+    background-color: #a60035;
+    color: white;
+  } */
+  .flex-row-dcc {
+    position: relative;
+    width: 1512px;
+    height: 440px;
+    margin: 50px 0 0 0;
+    z-index: 32;
+  }
+  .mask-group {
+    position: absolute;
+    width: 235.801px;
+    height: 440px;
+    top: 0;
+    left: 0;
+    background: url(images/d1.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 31;
+  }
+  .mask-group-2 {
+    position: absolute;
+    width: 235.801px;
+    height: 440px;
+    top: 0;
+    left: 1240px;
+    background: url(images/d2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 32;
+  }
+  .rectangle {
+    display: block;
+    position: absolute;
+    height: 105px;
+    margin: 60px 0 0 500px;
+    padding: 15px 80px 0px;
+    color: #940f37;
+    background: url(images/background.jpg);
+    font-family: Fair Prosper, var(--default-font-family);
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 350px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+  }
+  .za .navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .za .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .za .navbar li a {
+    display: block;
+    color: #a60035;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 10s, color 10s;
+  }
+  
+  .za .navbar li a:hover {
+    background-color: #a60035;
+    color: white;
+  }
+  
+  .za .navbar li a.active {
+    background-color: #a60035;
+    color: white;
+  }
+  .frame-3 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 30px;
+    position: relative;
+    width: 750px;
+    margin: 148px 0 0 250px;
+    z-index: 10;
+  }
+  .rectangle-4 {
+    flex-shrink: 0;
+    position: relative;
+    width: 450px;
+    height: 350px;
+    background: url(images/1.png);
+    z-index: 11;
+  }
+  .rectangle-5 {
+    flex-shrink: 0;
+    position: relative;
+    width: 450px;
+    height: 350px;
+    background: url(images/2.png);
+    z-index: 11;
+  }
+  .frame-4 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 30px;
+    position: relative;
+    width: 750px;
+    margin: 148px 0 0 250px;
+    z-index: 10;
+  }
+  .rectangle-6 {
+    flex-shrink: 0;
+    position: relative;
+    width: 450px;
+    height: 350px;
+    background: url(images/3.png);
+    z-index: 11;
+  }
+  .rectangle-7 {
+    flex-shrink: 0;
+    position: relative;
+    width: 450px;
+    height: 350px;
+    background: url(images/4.png);
+    z-index: 11;
+  }
+  .frame-5 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 30px;
+    position: relative;
+    width: 750px;
+    margin: 148px 0 0 250px;
+    z-index: 10;
+  }
+  .rectangle-8 {
+    flex-shrink: 0;
+    position: relative;
+    width: 450px;
+    height: 350px;
+    background: url(images/5.png);
+    z-index: 11;
+  }
+  .rectangle-9 {
+    flex-shrink: 0;
+    position: relative;
+    width: 450px;
+    height: 350px;
+    background: url(images/6.png);
+    z-index: 11;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .macbook-pro-13 {
+    flex-shrink: 0;
+    position: relative;
+    width: 1512px;
+    height: 521px;
+    background: #a60035;
+    z-index: 33;
+    overflow: hidden;
+  }
+  .flex-row-fd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 868px;
+    height: 202px;
+    margin: 136px 0 0 322px;
+    z-index: 37;
+  }
+  .group {
+    flex-shrink: 0;
+    position: relative;
+    width: 202px;
+    height: 202px;
+    background: url(images/contact.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 34;
+    border-radius: 10%;
+  }
+  .group-14 {
+    flex-shrink: 0;
+    position: relative;
+    width: 202px;
+    height: 202px;
+    background: url(images/location.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 35;
+    border-radius: 10%;
+  }
+  .group-15 {
+    flex-shrink: 0;
+    position: relative;
+    width: 202px;
+    height: 202px;
+    background: url(images/schedule.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 36;
+    border-radius: 10%;
+  }
+  .group-16 {
+    flex-shrink: 0;
+    position: relative;
+    width: 202px;
+    height: 202px;
+    background: url(images/abt.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 37;
+    border-radius: 10%;
+  }
+  .flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 779px;
+    height: 33px;
+    margin: 32px 0 0 370px;
+    z-index: 41;
+  }
+  .contact {
+    flex-shrink: 0;
+    position: relative;
+    height: 33px;
+    color: #ffffff;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 39;
+  }
+  .location {
+    flex-shrink: 0;
+    position: relative;
+    height: 33px;
+    color: #ffffff;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 40;
+  }
+  .schedule-17 {
+    flex-shrink: 0;
+    position: relative;
+    height: 33px;
+    color: #ffffff;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 41;
+  }
+  .about-18 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 119px;
+    height: 33px;
+    color: #ffffff;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 38;
+  }
+  .macbook-pro-19 {
+    flex-shrink: 0;
+    position: relative;
+    width: 1512px;
+    height: 469px;
+    font-size: 0px;
+    background: #ffffff;
+    z-index: 42;
+    overflow: hidden;
+  }
+  .wedding-invitation-website {
+    display: block;
+    position: relative;
+    height: 33px;
+    margin: 61px 0 0 568px;
+    color: #000000;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 43;
+  }
+  .kareyole-in {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 465px;
+    height: 158px;
+    margin: 43px 0 0 523px;
+    color: #000000;
+    font-family: Fair Prosper, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 157.824px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 45;
+  }
+  .vector {
+    position: relative;
+    width: 121.543px;
+    height: 119.312px;
+    margin: 11px 0 0 695px;
+    background: url(images/logo.jpg)
+      no-repeat center;
+    background-size: cover;
+    z-index: 46;
+  }
+  .kareyole-in-1a {
+    display: block;
+    position: relative;
+    height: 33px;
+    margin: 10.688px 0 0 687px;
+    color: #000000;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 44;
+  }
+  #footer-link{
+    text-decoration: none   ;
+  }

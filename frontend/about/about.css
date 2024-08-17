@@ -1,0 +1,615 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 1512px;
+    height: 3425px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  .macbook-pro {
+    flex-shrink: 0;
+    position: relative;
+    width: 1512px;
+    height: 2383px;
+    background: #ffffff;
+    z-index: 2;
+    overflow: hidden;
+  }
+  nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li a {
+    display: inline-block;
+    color: #a60035;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* nav li a:hover {
+    background-color: #a60035;
+    color: white;
+  }
+  
+  nav li a.active {
+    background-color: #a60035;
+    color: white;
+  } */
+  .flex-row-dcc {
+    position: relative;
+    width: 1512px;
+    height: 440px;
+    margin: 50px 0 0 0;
+    z-index: 32;
+  }
+  .mask-group {
+    position: absolute;
+    width: 235.801px;
+    height: 440px;
+    top: 0;
+    left: 0;
+    background: url(images/d2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 31;
+  }
+  .mask-group-2 {
+    position: absolute;
+    width: 235.801px;
+    height: 440px;
+    top: 0;
+    left: 1240px;
+    background: url(images/d1.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 32;
+  }
+  .rectangle {
+    position: absolute;
+    width: 868px;
+    height: 399px;
+    top: 22px;
+    left: 50%;
+    background: url(images/aboutmain.png);
+    transform: translate(-50%, 0);
+    z-index: 8;
+  }
+  .love-story {
+    display: block;
+    position: relative;
+    height: 105px;
+    margin: 53px 0 0 531px;
+    color: #940f37;
+    font-family: Fair Prosper, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 105px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+  }
+  .lorem-ipsum {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 868px;
+    height: 75px;
+    margin: 40px 0 0 322px;
+    color: #000000;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24.744px;
+    text-align: center;
+    z-index: 9;
+  }
+  .frame-3 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+    position: relative;
+    width: 868px;
+    margin: 148px 0 0 322px;
+    z-index: 10;
+  }
+  .rectangle-4 {
+    flex-shrink: 0;
+    position: relative;
+    width: 313px;
+    height: 317px;
+    background: url(images/a1.png);
+    z-index: 11;
+  }
+  .frame-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 535px;
+    height: 317px;
+    z-index: 12;
+  }
+  .frame-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 212px;
+    z-index: 13;
+  }
+  .january-23rd {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 165px;
+    height: 25px;
+    color: #000000;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24.744px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 14;
+  }
+  .day-we-met {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 53px;
+    color: #940f37;
+    font-family: Fair Prosper, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 52.608px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 15;
+  }
+  .lorem-ipsum-7 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 535px;
+    height: 200px;
+    color: #000000;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24.744px;
+    text-align: left;
+    z-index: 16;
+  }
+  .frame-8 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+    position: relative;
+    width: 868px;
+    margin: 148px 0 0 322px;
+    z-index: 17;
+  }
+  .rectangle-9 {
+    flex-shrink: 0;
+    position: relative;
+    width: 313px;
+    height: 317px;
+    background: url(images/a2.png);
+    z-index: 18;
+  }
+  .frame-a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 535px;
+    height: 317px;
+    z-index: 19;
+  }
+  .frame-b {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 192px;
+    z-index: 20;
+  }
+  .january-rd {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 192px;
+    height: 25px;
+    color: #000000;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24.744px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 21;
+  }
+  .the-day-we-met {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 53px;
+    color: #940f37;
+    font-family: Fair Prosper, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 52.608px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 22;
+  }
+  .qorem-ipsum-dolor {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 535px;
+    height: 200px;
+    color: #000000;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24.744px;
+    text-align: left;
+    z-index: 23;
+  }
+  .frame-c {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+    position: relative;
+    width: 868px;
+    margin: 148px 0 0 322px;
+    z-index: 24;
+  }
+  .rectangle-d {
+    flex-shrink: 0;
+    position: relative;
+    width: 313px;
+    height: 317px;
+    background: url(images/a3.png);
+    z-index: 25;
+  }
+  .frame-e {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 535px;
+    height: 317px;
+    z-index: 26;
+  }
+  .frame-f {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 194px;
+    z-index: 27;
+  }
+  .january-rd-10 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 194px;
+    height: 25px;
+    color: #000000;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24.744px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 28;
+  }
+  .the-day-we-met-11 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 53px;
+    color: #940f37;
+    font-family: Fair Prosper, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 52.608px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 29;
+  }
+  .qorem-ipsum-dolor-12 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 535px;
+    height: 200px;
+    color: #000000;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24.744px;
+    text-align: left;
+    z-index: 30;
+  }
+  .macbook-pro-13 {
+    flex-shrink: 0;
+    position: relative;
+    width: 1512px;
+    height: 521px;
+    background: #a60035;
+    z-index: 33;
+    overflow: hidden;
+  }
+  .flex-row-fd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 868px;
+    height: 202px;
+    margin: 136px 0 0 322px;
+    z-index: 37;
+  }
+  .group {
+    flex-shrink: 0;
+    position: relative;
+    width: 202px;
+    height: 202px;
+    background: url(images/contact.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 34;
+    border-radius: 10%;
+  }
+  .group-14 {
+    flex-shrink: 0;
+    position: relative;
+    width: 202px;
+    height: 202px;
+    background: url(images/location.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 35;
+    border-radius: 10%;
+  }
+  .group-15 {
+    flex-shrink: 0;
+    position: relative;
+    width: 202px;
+    height: 202px;
+    background: url(images/schedule.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 36;
+    border-radius: 10%;
+  }
+  .group-16 {
+    flex-shrink: 0;
+    position: relative;
+    width: 202px;
+    height: 202px;
+    background: url(images/gallery.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 37;
+    border-radius: 10%;
+  }
+  .flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 779px;
+    height: 33px;
+    margin: 32px 0 0 370px;
+    z-index: 41;
+  }
+  .contact {
+    flex-shrink: 0;
+    position: relative;
+    height: 33px;
+    color: #ffffff;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 39;
+  }
+  .location {
+    flex-shrink: 0;
+    position: relative;
+    height: 33px;
+    color: #ffffff;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 40;
+  }
+  .schedule-17 {
+    flex-shrink: 0;
+    position: relative;
+    height: 33px;
+    color: #ffffff;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 41;
+  }
+  .about-18 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 119px;
+    height: 33px;
+    color: #ffffff;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 38;
+  }
+  .macbook-pro-19 {
+    flex-shrink: 0;
+    position: relative;
+    width: 1512px;
+    height: 469px;
+    font-size: 0px;
+    background: #ffffff;
+    z-index: 42;
+    overflow: hidden;
+  }
+  .wedding-invitation-website {
+    display: block;
+    position: relative;
+    height: 33px;
+    margin: 61px 0 0 568px;
+    color: #000000;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 43;
+  }
+  .kareyole-in {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 465px;
+    height: 158px;
+    margin: 43px 0 0 523px;
+    color: #000000;
+    font-family: Fair Prosper, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 157.824px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 45;
+  }
+  .vector {
+    position: relative;
+    width: 121.543px;
+    height: 119.312px;
+    margin: 11px 0 0 695px;
+    background: url(images/logo.jpg)
+      no-repeat center;
+    background-size: cover;
+    z-index: 46;
+  }
+  .kareyole-in-1a {
+    display: block;
+    position: relative;
+    height: 33px;
+    margin: 10.688px 0 0 687px;
+    color: #000000;
+    font-family: Flamenco, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32.992px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 44;
+  }
+  .footer-link{
+    text-decoration: none;
+  }
